@@ -1,0 +1,53 @@
+<div class="workflow-details-container">
+    <div class="workflow-description">
+      <h2>Step-by-Step Workflow</h2>
+
+      <div class="steps">
+        <div class="step">
+          <h3>Step 1: Explore the Train data</h3>
+          <div class="copy-box">
+            <button class="copy-btn" (click)="copyStepContent(1)" title="Copy">📋</button>
+            <pre class="copy-content" #stepContent1>
+head -n 3 train.csv
+            </pre>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>Step 2: Fine-tune / adapt an LLM (Gemma, LLaMA, etc.)</h3>
+          <p>We provide ready-to-run notebooks with defaults that already pass ≥60 % of tests.</p>
+        </div>
+
+        <div class="step">
+          <h3>Step 3: Local validation</h3>
+          <div class="copy-box">
+            <button class="copy-btn" (click)="copyStepContent(2)" title="Copy">📋</button>
+            <pre class="copy-content" #stepContent1>
+python validate.py --model my_model --split train
+            </pre>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>Step 4: Dev Phase</h3>
+          <p>
+            <li>Receive <div class="grey-box">dev.csv</div> → generate <div class="grey-box">response.csv</div> → submit to CodaLab.</li>
+            <li>Leaderboard updates in real-time.</li>
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Step 5: Test Phase</h3>
+          <p>
+            <li>Same as Dev but one-shot (leaderboard freezes after one week)</li>
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Step 6: Write your system paper (4–6 pages, ACL 2023 style)</h3>
+          <p class="deadline">Deadline: Sep 29, 2025</p>
+        </div>
+      </div>
+
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="task-details-container">
+    <div class="task-description">
+      <h2>Task Description</h2>
+      <p>
+        <b>Input: </b> A Bangla programming prompt
+        <br>
+        <b>Output: </b> A Python script that satisfies all hidden unit tests
+      </p>
+
+      <div class="task-description-table-container">
+        <table class="task-description-table">
+          <thead>
+            <tr>
+              <th><b>Column</b></th>
+              <th><b>Description</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>instruction</td>
+              <td>Bangla prompt (e.g., দুটি পূর্ণসংখ্যার গ.সা.গু নির্ণয় করো)</td>
+            </tr>
+            <tr>
+              <td>response</td>
+              <td>Reference Python solution†</td>
+            </tr>
+            <tr>
+              <td>test_cases</td>
+              <td>Hidden tests (JSON list of I/O pairs)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="task-description-table-footer">
+        <p>
+          Note: † present only in the Train file
+        </p>
+      </div>
+    </div>
+
+    <div class="example-row-container">
+      <h2>Example Row (Train)</h2>
+      <div class="example-row-box">
+        <button class="copy-btn" (click)="copyExampleRow()" title="Copy">
+          📋
+        </button>
+        <pre class="example-row-content" #exampleRow>
+instruction,response,test_cases
+"দুটি পূর্ণসংখ্যার যোগফল নির্ণয় করো",
+"import sys;a,b=map(int,sys.stdin.read().split());print(a+b)",
+"[['2 3','5'],['10 20','30']]"
+        </pre>
+      </div>
+    </div>

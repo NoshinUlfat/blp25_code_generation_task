@@ -1,0 +1,153 @@
+.task-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+}
+
+.title-gif img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.title-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.custom-btn {
+  background-color: #16794e;
+  width: 250px;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #054b25;
+}
+
+@media (max-width: 900px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .custom-btn {
+    width: 90%;
+    min-width: 180px;
+    max-width: 350px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+.task-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.task-box {
+  position: relative;
+  overflow: hidden;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 600px;
+  max-height: 350px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.task-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../../../../../assets/images/bangla-letters.png') center center/cover no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.task-box > * {
+  position: relative;
+  z-index: 1;
+  color: #222;
+}
+
+.task-box .text {
+  margin-bottom: 1rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.task-box p {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.task-box-button-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.task-box-button-row a {
+  min-width: 160px;
+  text-align: center;
+  background: #f5f7fa;
+  color: #166743;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.task-box-button-row a:hover {
+  background: #e0f2ea;
+  color: #032e1b;
+}
+
+@media (max-width: 900px) {
+  .task-box-button-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+.bottom-line {
+  margin-top: 2.1rem;
+  border: none;
+  border-top: 2px solid #ccc;
+  width: 90%;
+}

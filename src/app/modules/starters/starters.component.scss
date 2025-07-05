@@ -1,0 +1,62 @@
+.get-started-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+}
+
+.title-gif img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.title-text {
+  margin-left: -0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.starter-items-container {
+  max-width: 800px;
+}
+
+.motivation-container {
+  margin-bottom: 3rem;
+}
+
+.motivation-container p {
+  font-size: 20px;
+}
+
+.centered-table-container {
+  display: flex;
+  // justify-content: center;
+  margin-top: 2rem;
+}
+
+.centered-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  // text-align: center;
+}
+
+.centered-table td {
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  font-size: 18px;
+  // text-align: center;
+}
+
+.participation-description h2,
+.motivation-container h2 {
+  text-align: left;
+  margin-left: 0;
+}

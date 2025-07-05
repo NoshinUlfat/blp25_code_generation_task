@@ -1,0 +1,61 @@
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title .site-title {
+  /* Remove font-size, font-weight, text-decoration, color from here */
+  /* Only use .site-title for styling */
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  // gap: 0.2rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: -0.3rem;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 1rem;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  color: rgb(237, 16, 16);
+  border-radius: 4px;
+}

@@ -1,0 +1,114 @@
+.task-announcement-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-gif img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.title-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.task-details-container {
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+.task-description-table-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.task-description p {
+  font-size: 20px;
+}
+
+.task-description-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.task-description-table th {
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.task-description-table td {
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+.participattask-descriptionion h2 {
+  text-align: left;
+  margin-left: 0;
+}
+
+.task-description-table-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.task-description-table-footer p {
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+.example-row-container {
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+.example-row-box {
+  position: relative;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  max-width: 700px;
+  color: #555;
+  font-size: 16px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 4px 8px;
+  transition: background 0.2s;
+}
+.copy-btn:hover {
+  background: #e0e0e0;
+}
+
+.example-row-content {
+  margin: 0;
+  color: #888;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
