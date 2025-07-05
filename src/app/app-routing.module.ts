@@ -4,6 +4,7 @@ import { HomePageComponent } from "./modules/home-page/home-page.component";
 import { TaskAnnouncementComponent } from "./modules/task-announcement/task-announcement.component";
 import { StartersComponent } from "./modules/starters/starters.component";
 import { ImportantDatesComponent } from "./modules/important-dates/important-dates.component";
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,8 +15,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    imports: [
+      RouterModule.forRoot(routes, { useHash: true })
+    ],
+    exports: [RouterModule],
+    providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ]
+
 })
 
 export class AppRoutingModule { }
