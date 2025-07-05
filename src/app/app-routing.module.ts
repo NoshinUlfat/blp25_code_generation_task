@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'task-announcement', component: TaskAnnouncementComponent},
   {path: 'get-started', component: StartersComponent},
   {path: 'important-dates', component: ImportantDatesComponent},
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
