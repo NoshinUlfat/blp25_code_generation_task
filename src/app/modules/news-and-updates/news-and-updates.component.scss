@@ -1,4 +1,4 @@
-.task-announcement-container {
+.news-announcement-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
 .title {
   display: flex;
   align-items: center;
-  // gap: 0rem;
+  gap: 1rem;
 }
 
 .title-gif img {
@@ -23,7 +23,8 @@
   color: #333;
 }
 
-.task-details-container {
+.news-details-container {
   max-width: 800px;
   margin-top: 1.5rem;
 }
+

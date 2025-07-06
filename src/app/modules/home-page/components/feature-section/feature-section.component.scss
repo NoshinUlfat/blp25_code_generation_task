@@ -20,6 +20,24 @@
   text-align: center;
   width: 400px;
   // height: 200px;
+
+  .feature-btn {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    background-color: #f5f7fa;
+    color: #166743;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: center;
+  }
+
+  .feature-btn:hover {
+    background-color: #e0f2ea;
+  }
 }
 
 .feature-box .text {

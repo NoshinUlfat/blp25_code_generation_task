@@ -5,6 +5,7 @@ import { TaskAnnouncementComponent } from "./modules/task-announcement/task-anno
 import { StartersComponent } from "./modules/starters/starters.component";
 import { ImportantDatesComponent } from "./modules/important-dates/important-dates.component";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
+import { NewsAndUpdatesComponent } from "./modules/news-and-updates/news-and-updates.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'task-announcement', component: TaskAnnouncementComponent},
   {path: 'get-started', component: StartersComponent},
   {path: 'important-dates', component: ImportantDatesComponent},
+  {path: 'news-and-update', component: NewsAndUpdatesComponent},
   { path: '**', redirectTo: 'home' }
 ];
 

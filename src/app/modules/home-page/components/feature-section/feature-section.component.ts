@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-feature-section',
@@ -8,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeatureSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  redirectToTaskAnnouncement() {
+    this.router.navigate(['/task-announcement']);
+  }
+  
+  redirectToNewsAndUpdates() {
+    this.router.navigate(['/news-and-update']);
+  }
 }
