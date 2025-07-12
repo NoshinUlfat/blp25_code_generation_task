@@ -7,14 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.scss'],
   standalone: false
 })
-export class FooterComponent implements OnInit {
-
+export class FooterComponent {
   constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
-
-  click(): void {
+  redirectToTaskAnnouncement(): void {
     this.router.navigate(['/task-announcement']);
   }
 }

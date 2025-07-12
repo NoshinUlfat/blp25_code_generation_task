@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,12 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./feature-section.component.scss'],
   standalone: false
 })
-export class FeatureSectionComponent implements OnInit {
+export class FeatureSectionComponent {
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
+  constructor(private router: Router) {}
 
   redirectToTaskAnnouncement() {
     this.router.navigate(['/task-announcement']);

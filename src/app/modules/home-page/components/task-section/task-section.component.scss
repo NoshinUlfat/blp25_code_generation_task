@@ -23,41 +23,61 @@
   color: #333;
 }
 
-.button-container {
+.segmented-button-group {
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 1rem;
+  border: 2px solid #b5cbd3;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: #e6f2ed;
 }
 
-.custom-btn {
-  background-color: #16794e;
-  width: 250px;
-  color: #fff;
+.segmented-btn {
+  flex: 1 1 auto;
   border: none;
-  padding: 0.75rem 2rem;
-  border-radius: 10px;
+  background-color: #e6f2ed;
+  padding: 0.75rem 1.5rem;
+  color: #333;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  border-right: 2px solid #b5cbd3;
+  transition: background-color 0.2s;
 }
 
-.custom-btn:hover {
-  background-color: #054b25;
+.segmented-btn:last-child {
+  border-right: none;
 }
 
-@media (max-width: 900px) {
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+.segmented-btn:hover {
+  background-color: #c8e2d7;
+}
+
+@media (max-width: 870px) {
+  .segmented-btn {
+    border-top: 1px solid #b5cbd3;
+  border-bottom: 1px solid #b5cbd3;
   }
-  .custom-btn {
-    width: 90%;
-    min-width: 180px;
-    max-width: 350px;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .segmented-button-group {
+    flex-direction: column;
+    border-radius: 10px; 
+  }
+
+  .segmented-btn {
+    border-right: none;
+    border-bottom: 1px solid var(--gradient-start);
+    width: 100%;
+    border-top: 1px solid #b5cbd3;
+    border-bottom: 1px solid #b5cbd3;
+  }
+
+  .segmented-btn:last-child {
+    border-bottom: none;
   }
 }
 
@@ -78,7 +98,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1rem 2rem;
   max-width: 600px;
   max-height: 350px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -107,7 +127,7 @@
 
 .task-box p {
   margin-top: 0.5rem;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 

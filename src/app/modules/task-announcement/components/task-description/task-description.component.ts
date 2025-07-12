@@ -7,7 +7,6 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   standalone: false
 })
 export class TaskDescriptionComponent {
-
  @ViewChild('exampleRow') exampleRow!: ElementRef;
 
   copyExampleRow() {

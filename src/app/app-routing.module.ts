@@ -3,7 +3,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomePageComponent } from "./modules/home-page/home-page.component";
 import { TaskAnnouncementComponent } from "./modules/task-announcement/task-announcement.component";
 import { StartersComponent } from "./modules/starters/starters.component";
-import { ImportantDatesComponent } from "./modules/important-dates/important-dates.component";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { NewsAndUpdatesComponent } from "./modules/news-and-updates/news-and-updates.component";
 
@@ -12,7 +11,6 @@ const routes: Routes = [
   {path: 'home', component: HomePageComponent},
   {path: 'task-announcement', component: TaskAnnouncementComponent},
   {path: 'get-started', component: StartersComponent},
-  {path: 'important-dates', component: ImportantDatesComponent},
   {path: 'news-and-update', component: NewsAndUpdatesComponent},
   { path: '**', redirectTo: 'home' }
 ];

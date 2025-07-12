@@ -6,7 +6,6 @@ import { LayoutModule } from './modules/layout/layout.module';
 import { HomePageModule } from './modules/home-page/home-page.module';
 import { TaskAnnouncementModule } from './modules/task-announcement/task-announcement.module';
 import { StartersModule } from './modules/starters/starters.module';
-import { ImportantDatesModule } from './modules/important-dates/important-dates.module';
 import { NewsAndUpdatesModule } from './modules/news-and-updates/news-and-updates.module';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { NewsAndUpdatesModule } from './modules/news-and-updates/news-and-update
     AppRoutingModule,
     LayoutModule,
     HomePageModule,
-    ImportantDatesModule,
     NewsAndUpdatesModule,
     StartersModule,
     TaskAnnouncementModule],

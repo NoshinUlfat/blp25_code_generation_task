@@ -7,7 +7,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   standalone: false
 })
 export class StepByStepWorkflowComponent {
-
   @ViewChild('stepContent1') stepContent1!: ElementRef;
   @ViewChild('stepContent2') stepContent2!: ElementRef;
  

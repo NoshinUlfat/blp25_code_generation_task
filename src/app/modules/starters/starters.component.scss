@@ -38,21 +38,18 @@
 
 .centered-table-container {
   display: flex;
-  // justify-content: center;
   margin-top: 2rem;
 }
 
 .centered-table {
   border-collapse: collapse;
   margin: 0 auto;
-  // text-align: center;
 }
 
 .centered-table td {
   border: 1px solid #ddd;
   padding: 12px 24px;
   font-size: 18px;
-  // text-align: center;
 }
 
 .participation-description h2,

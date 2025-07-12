@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,12 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss'],
   standalone: false
 })
-export class NavBarComponent implements OnInit {
-
-  constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
+export class NavBarComponent {
+  constructor(private router: Router) {}
 
   redirectToNewsAndUpdates() {
     this.router.navigate(['/news-and-update']);

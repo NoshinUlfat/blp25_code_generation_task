@@ -1,0 +1,22 @@
+<div class="events-container">
+  <div class="title">
+  </div>
+
+  <div class="timeline-wrapper">
+    <div class="timeline" [ngClass]="layout">
+      <div class="timeline-line"></div>
+
+      <div
+        class="timeline-item"
+        *ngFor="let e of events; let i = index"
+        [ngClass]="{ odd: i % 2 === 0, even: i % 2 === 1 }"
+      >
+        <div class="marker" [style.background]="e.color"></div>
+        <div class="event-card">
+          <div class="date">{{ e.date }}</div>
+          <div class="title">{{ e.title }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

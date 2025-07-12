@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,12 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./news-and-updates.component.scss'],
   standalone: false
 })
-export class NewsAndUpdatesComponent implements OnInit {
-
+export class NewsAndUpdatesComponent {
   constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
 
   redirectToTaskAnnouncement() {
     this.router.navigate(['/task-announcement']);

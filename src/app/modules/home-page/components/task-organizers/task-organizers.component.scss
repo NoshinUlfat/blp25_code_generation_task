@@ -9,14 +9,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // gap: 0.5rem;
   margin-bottom: 0.7rem;
 }
 
 .title-img {
   position: relative;
   z-index: 2;
-  margin-bottom: -2.5rem; // Pull image down over the title-text
+  margin-bottom: -2.5rem; 
 }
 
 .title-img img {
@@ -33,8 +32,8 @@
   padding: 0.5rem 1.5rem;
   width: 300px;
   height: 120px;
-  background: url('../../../../../assets/parchment-3.png') center center/100% 100% no-repeat;
-  display: flex;        // Use flex to center text vertically and horizontally
+  background: url('../../../../../assets/images/parchment-3.png') center center/100% 100% no-repeat;
+  display: flex;       
   align-items: center;
   justify-content: center;
   position: relative;
@@ -54,17 +53,13 @@
 .organizer-box {
   position: relative;
   overflow: hidden;
-  /* Remove direct background and opacity from .task-box */
   background: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // border-radius: 10px;
   padding: 0.5rem;
   width: 200px;
-  // height: 150px;
-  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .organizer-box .text {

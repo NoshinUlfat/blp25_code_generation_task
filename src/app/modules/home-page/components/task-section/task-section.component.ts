@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,12 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./task-section.component.scss'],
   standalone: false
 })
-export class TaskSectionComponent implements OnInit {
+export class TaskSectionComponent {
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
+  constructor(private router: Router) {}
 
   redirectToTaskAnnouncement() {
     this.router.navigate(['/task-announcement']);
@@ -20,9 +17,5 @@ export class TaskSectionComponent implements OnInit {
 
   redirectToGetStarted() {
     this.router.navigate(['/get-started']);
-  }
-
-  redirectToImportantDates() {
-    this.router.navigate(['/important-dates']);
   }
 }

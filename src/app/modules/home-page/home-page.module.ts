@@ -5,12 +5,26 @@ import { TaskSectionComponent } from './components/task-section/task-section.com
 import { FeatureSectionComponent } from './components/feature-section/feature-section.component';
 import { TaskOrganizersComponent } from './components/task-organizers/task-organizers.component';
 import { LayoutModule } from '../layout/layout.module';
+import { EventsComponent } from './components/events/events.component';
+import { TimelineModule } from 'primeng/timeline';
 
 @NgModule({
-  declarations: [HomePageComponent, TaskSectionComponent, FeatureSectionComponent, TaskOrganizersComponent],
-  imports: [
-    CommonModule, LayoutModule
+  declarations: [
+    EventsComponent, 
+    HomePageComponent, 
+    TaskSectionComponent, 
+    FeatureSectionComponent, 
+    TaskOrganizersComponent,
   ],
-  exports: [HomePageComponent, TaskSectionComponent, FeatureSectionComponent, TaskOrganizersComponent],
+  imports: [
+    CommonModule, LayoutModule, TimelineModule
+  ],
+  exports: [
+    EventsComponent, 
+    HomePageComponent, 
+    TaskSectionComponent, 
+    FeatureSectionComponent, 
+    TaskOrganizersComponent
+  ],
 })
 export class HomePageModule { }
