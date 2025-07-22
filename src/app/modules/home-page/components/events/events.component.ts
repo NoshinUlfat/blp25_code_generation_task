@@ -11,13 +11,14 @@ export class EventsComponent {
   layout: 'horizontal' | 'vertical' = 'horizontal';
 
   events: TimelineEvent[] = [
-    { date: 'TBD', title: 'Train Dataset Release', color: '#6fa8dc' },
-    { date: 'TBD', title: 'Dev Dataset Release', color: '#e06666' },
-    { date: 'TBD', title: 'Test Dataset Release', color: '#93c47d' },
-    { date: 'TBD', title: 'Final Rankings Release', color: '#6fa8dc' },
-    { date: 'Sep 29, 2025', title: 'Paper Submission Deadline', color: '#e06666' },
-    { date: 'Nov 3, 2025', title: 'Paper Acceptance Notification', color: '#93c47d' },
-    { date: 'Nov 11, 2025', title: 'Camera‑ready Due', color: '#6fa8dc' },
+    { date: '10 Jul, 2025', title: 'Registration on codalab and beginning of the development cycle', color: '#6fa8dc' },
+    { date: '25 Sep, 2025', title: 'Beginning of the evaluation cycle (test sets release and run submission)', color: '#e06666' },
+    { date: '1 Oct, 2025', title: 'End of the evaluation cycle', color: '#93c47d' },
+    { date: '3  Oct, 2025', title: 'Publish rank list and share paper submission details', color: '#6fa8dc' },
+    { date: '15 Oct, 2025', title: 'Paper Submission Deadline (Shared Task System Papers Due)', color: '#e06666' },
+    { date: '3 Nov, 2025', title: 'PNotification of acceptance', color: '#93c47d' },
+    { date: '11 Nov, 2025', title: 'Camera‑ready Due', color: '#6fa8dc' },
+    { date: '23-14 Dec, 2025', title: 'Workshop co-located with IJCNLP-AACL 2025 (Mumbai, India)', color: '#e06666' },
   ];
   
   constructor() {
@@ -30,6 +31,6 @@ export class EventsComponent {
   }
 
   checkScreenSize() {
-    this.layout = window.innerWidth < 768 ? 'vertical' : 'horizontal';
+    this.layout = window.innerWidth < 900 ? 'vertical' : 'horizontal';
   }
 }
