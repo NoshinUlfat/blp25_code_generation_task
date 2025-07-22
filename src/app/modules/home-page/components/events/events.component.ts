@@ -16,7 +16,7 @@ export class EventsComponent {
     { date: '1 Oct, 2025', title: 'End of the evaluation cycle', color: '#93c47d' },
     { date: '3  Oct, 2025', title: 'Publish rank list and share paper submission details', color: '#6fa8dc' },
     { date: '15 Oct, 2025', title: 'Paper Submission Deadline (Shared Task System Papers Due)', color: '#e06666' },
-    { date: '3 Nov, 2025', title: 'PNotification of acceptance', color: '#93c47d' },
+    { date: '3 Nov, 2025', title: 'Notification of acceptance', color: '#93c47d' },
     { date: '11 Nov, 2025', title: 'Camera‑ready Due', color: '#6fa8dc' },
     { date: '23-14 Dec, 2025', title: 'Workshop co-located with IJCNLP-AACL 2025 (Mumbai, India)', color: '#e06666' },
   ];
