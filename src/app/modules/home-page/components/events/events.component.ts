@@ -12,9 +12,9 @@ export class EventsComponent {
 
   events: TimelineEvent[] = [
     { date: '10 Jul, 2025', title: 'Registration on codalab and beginning of the development cycle', color: '#6fa8dc' },
-    { date: '10-31 Aug, 2025', title: 'Beginning of the evaluation cycle (test sets release and run submission)', color: '#e06666' },
-    { date: '1-7 Sep, 2025', title: 'End of the evaluation cycle', color: '#93c47d' },
-    { date: '10 Sep, 2025', title: 'Publish rank list and share paper submission details', color: '#6fa8dc' },
+    { date: '10-31 Aug, 2025', title: 'Dev Phase', color: '#e06666' },
+    { date: '1-7 Sep, 2025', title: 'Test Phase', color: '#93c47d' },
+    { date: '10 Sep, 2025', title: 'Final Ranking Published & Paper Invitations', color: '#6fa8dc' },
     { date: '29 Sep, 2025', title: 'Paper Submission Deadline (Shared Task System Papers Due)', color: '#e06666' },
     { date: '3 Nov, 2025', title: 'Notification of acceptance', color: '#93c47d' },
     { date: '11 Nov, 2025', title: 'Camera‑ready Due', color: '#6fa8dc' },
