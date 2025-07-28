@@ -152,4 +152,9 @@
 }
 
 .date  { font-weight: bold; margin-bottom: 0.5rem; }
-.title { font-size: 1.1rem; }
+.title { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+ }
