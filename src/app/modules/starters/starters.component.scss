@@ -28,14 +28,6 @@
   max-width: 800px;
 }
 
-.motivation-container {
-  margin-bottom: 3rem;
-}
-
-.motivation-container p {
-  font-size: 20px;
-}
-
 .centered-table-container {
   display: flex;
   margin-top: 2rem;
@@ -56,4 +48,11 @@
 .motivation-container h2 {
   text-align: left;
   margin-left: 0;
+}
+
+.dataset-description, .sample-code-description {
+  margin-top: 3rem;
+}
+.dataset-description li, .sample-code-description li {
+  font-size: 20px;
 }

@@ -17,6 +17,10 @@
           </thead>
           <tbody>
             <tr>
+              <td>id</td>
+              <td>id</td>
+            </tr>
+            <tr>
               <td>instruction</td>
               <td>Bangla prompt (e.g., দুটি পূর্ণসংখ্যার গ.সা.গু নির্ণয় করো)</td>
             </tr>
@@ -46,7 +50,8 @@
           📋
         </button>
         <pre class="example-row-content" #exampleRow>
-instruction,response,test_cases
+id, instruction,response,test_cases
+"1",
 "দুটি পূর্ণসংখ্যার যোগফল নির্ণয় করো",
 "import sys;a,b=map(int,sys.stdin.read().split());print(a+b)",
 "[['2 3','5'],['10 20','30']]"
