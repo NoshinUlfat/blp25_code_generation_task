@@ -19,17 +19,7 @@ head -n 3 train.csv
         </div>
 
         <div class="step">
-          <h3>Step 3: Local validation</h3>
-          <div class="copy-box">
-            <button class="copy-btn" (click)="copyStepContent(2)" title="Copy">📋</button>
-            <pre class="copy-content" #stepContent1>
-python validate.py --model my_model --split train
-            </pre>
-          </div>
-        </div>
-
-        <div class="step">
-          <h3>Step 4: Dev Phase</h3>
+          <h3>Step 3: Dev Phase</h3>
           <p>
             <li>Receive <div class="grey-box">dev.csv</div> → generate <div class="grey-box">response.csv</div> → submit to CodaLab.</li>
             <li>Leaderboard updates in real-time.</li>
@@ -37,14 +27,14 @@ python validate.py --model my_model --split train
         </div>
 
         <div class="step">
-          <h3>Step 5: Test Phase</h3>
+          <h3>Step 4: Test Phase</h3>
           <p>
             <li>Same as Dev but one-shot (leaderboard freezes after one week)</li>
           </p>
         </div>
 
         <div class="step">
-          <h3>Step 6: Write your system paper (4–6 pages, ACL 2023 style)</h3>
+          <h3>Step 5: Write your system paper (4–6 pages, ACL 2023 style)</h3>
           <p class="deadline">Deadline: Sep 29, 2025</p>
         </div>
       </div>
