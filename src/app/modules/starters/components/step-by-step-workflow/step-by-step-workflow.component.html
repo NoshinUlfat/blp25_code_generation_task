@@ -8,20 +8,21 @@
           <div class="copy-box">
             <button class="copy-btn" (click)="copyStepContent(1)" title="Copy">📋</button>
             <pre class="copy-content" #stepContent1>
-head -n 3 train.csv
+import pandas as pd
+print(pd.read_csv(‘trial.csv’))
             </pre>
           </div>
         </div>
 
         <div class="step">
-          <h3>Step 2: Fine-tune / adapt an LLM (Gemma, LLaMA, etc.)</h3>
-          <p>We provide ready-to-run notebooks with defaults that already pass ≥60 % of tests.</p>
+          <h3>Step 2: Prompt / fine-tune using the sample codes</h3>
+          <p>We provide ready-to-run notebooks with defaults that already pass ≥ 10-20% of tests.</p>
         </div>
 
         <div class="step">
           <h3>Step 3: Dev Phase</h3>
           <p>
-            <li>Receive <div class="grey-box">dev.csv</div> → generate <div class="grey-box">response.csv</div> → submit to CodaLab.</li>
+            <li>Receive <div class="grey-box">dev.csv</div> → generate <div class="grey-box">submission.zip</div> → submit to CodaLab.</li>
             <li>Leaderboard updates in real-time.</li>
           </p>
         </div>
@@ -29,12 +30,16 @@ head -n 3 train.csv
         <div class="step">
           <h3>Step 4: Test Phase</h3>
           <p>
-            <li>Same as Dev but one-shot (leaderboard freezes after one week)</li>
+            <li>Receive <div class="grey-box">test.csv</div> → generate <div class="grey-box">submission.zip</div> → submit to CodaLab.</li>
+            <li>Leaderboard updates in real-time.</li>
           </p>
         </div>
 
         <div class="step">
-          <h3>Step 5: Write your system paper (4–6 pages, ACL 2023 style)</h3>
+          <h3>Step 5: Write your system paper (Exactly 4 pages, ACL 2023 style)</h3>
+          <p>
+            Paper template link: <a href="https://www.overleaf.com/latex/templates/association-for-computational-linguistics-acl-conference/jvxskxpnznfj">Link</a>
+          </p>
           <p class="deadline">Deadline: Sep 29, 2025</p>
         </div>
       </div>
