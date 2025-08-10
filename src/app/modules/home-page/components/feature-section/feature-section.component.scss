@@ -32,6 +32,11 @@
     align-self: center;
   }
 
+  .feature-btn a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   .feature-btn:hover {
     background-color: #e0f2ea;
   }
