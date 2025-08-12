@@ -16,6 +16,6 @@ export class TaskSectionComponent {
   }
 
   redirectToGetStarted() {
-    this.router.navigate(['/get-started']);
+    this.router.navigate(['/starter-kit']);
   }
 }
