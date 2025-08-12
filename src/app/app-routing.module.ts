@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: HomePageComponent},
   {path: 'task-announcement', component: TaskAnnouncementComponent},
-  {path: 'get-started', component: StartersComponent},
+  {path: 'starter-kit', component: StartersComponent},
   {path: 'news-and-update', component: NewsAndUpdatesComponent},
   { path: '**', redirectTo: 'home' }
 ];

@@ -13,4 +13,8 @@ export class NewsAndUpdatesComponent {
   redirectToTaskAnnouncement() {
     this.router.navigate(['/task-announcement']);
   }
+
+  redirectToStarterkit() {
+    this.router.navigate(['/starter-kit']);
+  }
 }
