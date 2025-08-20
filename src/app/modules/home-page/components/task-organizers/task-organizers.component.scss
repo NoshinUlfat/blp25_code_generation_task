@@ -48,6 +48,7 @@
   justify-content: center;
   gap: 1rem;
   margin-top: 3rem;
+  max-width: 1200px;
 }
 
 .organizer-box {
@@ -59,7 +60,8 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  width: 200px;
+  flex: 0 0 200px; // Fix width for flexbox
+  max-width: 200px;
 }
 
 .organizer-box .text {
