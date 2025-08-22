@@ -7,6 +7,7 @@ import { TaskOrganizersComponent } from './components/task-organizers/task-organ
 import { LayoutModule } from '../layout/layout.module';
 import { EventsComponent } from './components/events/events.component';
 import { TimelineModule } from 'primeng/timeline';
+import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TimelineModule } from 'primeng/timeline';
     TaskSectionComponent, 
     FeatureSectionComponent, 
     TaskOrganizersComponent,
+    LeaderboardComponent
   ],
   imports: [
     CommonModule, LayoutModule, TimelineModule
@@ -24,7 +26,8 @@ import { TimelineModule } from 'primeng/timeline';
     HomePageComponent, 
     TaskSectionComponent, 
     FeatureSectionComponent, 
-    TaskOrganizersComponent
+    TaskOrganizersComponent,
+    LeaderboardComponent
   ],
 })
 export class HomePageModule { }

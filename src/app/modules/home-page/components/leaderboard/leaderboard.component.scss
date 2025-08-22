@@ -1,0 +1,187 @@
+.leaderboard-container {
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  width: 100%;
+  max-width: 98vw;
+  background: linear-gradient(135deg, #e6f2ed, #f5f7fa);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.leaderboard-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.leaderboard-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #166743;
+  margin-bottom: 0.2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.leaderboard-title h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #166743;
+  margin: 0.3rem 0 0 0;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard-title-img {
+  display: flex;
+  align-items: center; 
+  height: 100%;
+}
+
+.leaderboard-title-img img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  object-fit: contain;
+  margin-top: -1.5rem; 
+  vertical-align: middle;
+}
+
+.leaderboard-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.leaderboard-table table {
+  width: 100%;
+  min-width: 400px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .leaderboard-container {
+    padding: 1rem;
+    max-width: 100vw;
+  }
+  .leaderboard-table table {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .leaderboard-container {
+    padding: 0.5rem;
+    border-radius: 8px;
+    max-width: 100vw;
+  }
+  .leaderboard-table table {
+    font-size: 0.85rem;
+    min-width: 320px;
+  }
+}
+
+.leaderboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #166743;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.leaderboard-table th {
+  background: #166743;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.leaderboard-table tr:hover {
+  background: #e0f2ea;
+  transition: 0.3s ease;
+}
+
+.leaderboard-table td:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.medal {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  margin-top: 0.4rem; 
+}
+
+/* Ribbon */
+.medal::before {
+  content: "";
+  position: absolute;
+  top: -0.35rem;
+  left: 30%;
+  width: 40%;
+  height: 0.25rem;
+  background: #666;
+  border-radius: 2px;
+}
+
+/* Inner circle */
+.medal::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+.medal span {
+  position: relative;
+  z-index: 1;
+  font-size: 0.75rem; 
+}
+
+.rank-1 {
+  background: #FFD700;  
+}
+.rank-2 {
+  background: #C0C0C0;  
+}
+.rank-3 {
+  background: #CD7F32;  
+}
+.rank-4 {
+  background: #D2B48C;  
+}
+.rank-5 {
+  background: #808080;   
+}

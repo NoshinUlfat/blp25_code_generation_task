@@ -197,6 +197,14 @@
   }
 }
 
+.leaderboard-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0;
+  position: static; 
+}
+
 .bottom-line {
   margin-top: 2.1rem;
   border: none;
