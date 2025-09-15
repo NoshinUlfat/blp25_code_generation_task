@@ -1,86 +1,60 @@
 <div class="leaderboard-container">
-  <div class="leaderboard-title-row" style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+  <div class="leaderboard-title-row">
     <span class="leaderboard-title">
       Leaderboard
-      <h5>Top 10 Teams of dev phase</h5>
+      <h5>Top 32 Teams of Test Phase</h5>
     </span>
     <span class="leaderboard-title-img">
-      <img src="assets/images/tiger-with-trophy.png" alt="Leaderboard Icon" style="width: 70px; height: 70px;" />
+      <img src="assets/images/tiger-with-trophy.png" alt="Leaderboard Icon" />
     </span>
   </div>
 
-  <div class="leaderboard-table">
+  <div class="leaderboard-table" role="region" aria-label="Leaderboard table">
     <table>
       <thead>
         <tr>
-          <th>Rank</th>
-          <th>Team Name</th>
-          <th>Affiliation</th>
-          <th>Score</th>
+          <th scope="col">Rank</th>
+          <th scope="col">Team Name</th>
+          <th scope="col">Affiliation</th>
+          <th scope="col">Score</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><span class="medal rank-1">1</span></td>
-          <td>NALA_MANIZ_2</td>
-          <td>JGU</td>
-          <td>0.9975</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-2">2</span></td>
-          <td>BRACU_CL</td>
-          <td>BRAC University</td>
-          <td>0.9975</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-3">3</span></td>
-          <td>not_Decided</td>
-          <td>none</td>
-          <td>0.9925</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-4">4</span></td>
-          <td>Team_Trinity</td>
-          <td>Independent researchers</td>
-          <td>0.9925</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-5">5</span></td>
-          <td>Code_Gen</td>
-          <td>BUET</td>
-          <td>0.9725</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-5">6</span></td>
-          <td>Team B2B</td>
-          <td>BUET</td>
-          <td>0.9725</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-5">7</span></td>
-          <td>Musafir</td>
-          <td>CUET</td>
-          <td>0.9425</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-5">8</span></td>
-          <td>Oleksandr Usyk</td>
-          <td>CUET</td>
-          <td>0.9425</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-5">9</span></td>
-          <td>PyBangla</td>
-          <td>GUB</td>
-          <td>0.94</td>
-        </tr>
-        <tr>
-          <td><span class="medal rank-5">10</span></td>
-          <td>alubhorta</td>
-          <td>Individual</td>
-          <td>0.9375</td>
+        <!-- Use slice to show first 10 rows when collapsed -->
+        <tr *ngFor="let team of teams | slice:0:(showAll ? teams.length : 10); let i = index">
+          <td>
+            <span
+              class="medal"
+              [ngClass]="{
+                'rank-1': getRank(i) === 1,
+                'rank-2': getRank(i) === 2,
+                'rank-3': getRank(i) === 3,
+                'rank-4': getRank(i) === 4,
+                'rank-5': getRank(i) === 5,
+                'rank-below-5': getRank(i) > 5
+              }"
+              aria-hidden="true"
+            >
+              {{ getRank(i) }}
+            </span>
+          </td>
+          <td class="team-name">{{ team.teamName && team.teamName !== '""' ? team.teamName : '—' }}</td>
+          <td class="affiliation">{{ team.affiliation && team.affiliation !== '""' ? team.affiliation : '—' }}</td>
+          <td class="score">{{ team.score | number:'1.3-3' }}</td>
         </tr>
       </tbody>
     </table>
+  </div>
+
+  <div class="table-toggle">
+    <button
+      type="button"
+      (click)="toggleTable()"
+      class="toggle-btn"
+      [attr.aria-expanded]="showAll"
+      [attr.aria-label]="showAll ? 'Collapse table' : 'Expand table'"
+    >
+      {{ showAll ? 'Collapse table' : 'Expand table' }}
+    </button>
   </div>
 </div>
