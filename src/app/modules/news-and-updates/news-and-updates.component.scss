@@ -44,6 +44,22 @@
   display: block;
 }
 
+.important-date {
+  display: inline-block; 
+  width: auto;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 2px 5px;
+}
+
+.important-date::after {
+  content: "";
+  display: block;
+}
+
+
 .news-item {
   margin-bottom: -1rem;
 }
@@ -70,4 +86,9 @@
 
 .news-item-button:hover {
   color: red;
+}
+
+.important-news {
+  color: red;
+  font-weight: bold;
 }
